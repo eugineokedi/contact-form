@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(229, 240, 250);
+  height: 100%;
+}
+
+.form {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 247, 247);
+  border-radius: 15px;
+  margin: 20px;
+  width: 600px;
+}
+
+.name-input {
+  display: flex;
+  gap: 4px;
+  padding-left: 10px;
+}
+
+label {
+  
+}
+
+.first-name {
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}
+
+.last-name {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.email-address {
+  margin: 25px;
+}
+
+.email {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+button {
+  width: 500px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: darkgreen;
+  padding: 8px;
+  margin-bottom: 30px;
+}
+  
