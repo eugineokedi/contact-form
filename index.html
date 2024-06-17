@@ -4,28 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <title>Contact form</title>
+  <title>Contact Form</title>
 </head>
 <body>
   <div class="container">
-    <h1>Contact Us</h1>
-    <div class="form">
-      <div class="form-group">
-      <label for="first-name">First Name</label>
-      <input type="text" name="first-name" id="first-name" placeholder="First Name">
-      <label for="last-name">Last Name</label>
-      <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-      <label for="email">Email Address</label>
-      <input type="text" name="email" id="email" placeholder="Email Address">
+    <form class="form" action="/submit" method="post">
+      <h1>Contact Us</h1>
+
+      <div class="first-name">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name" placeholder="First Name">
       </div>
-      <div>
+      
+      <div class="last-name">
+        <label for="last-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+      </div>
+
+      <div class="email-address">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Email Address">
+      </div>
+
+      <div class="query">
         <h3>Query Type</h3>
-
+        <div>
+          <input type="radio" name="query-type" id="general-enquiry" value="general-enquiry">
+          <label for="general-enquiry">General Enquiry</label>
+        </div>
+        <div>
+          <input type="radio" name="query-type" id="support-request" value="support-request">
+          <label for="support-request">Support Request</label>
+        </div>
       </div>
-    </div>
+
+      <div class="textarea">
+        <h4>Message</h4>
+        <textarea class="message" name="message" id="message" placeholder="Message"></textarea>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" name="consent" id="consent">
+        <label for="consent">I consent to being contacted by the team</label>
+      </div>
+
+      <div class="submit-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
   </div>
-
-
   <script src="index.js"></script>
 </body>
 </html>
