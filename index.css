@@ -12,17 +12,13 @@
   background-color: rgb(250, 247, 247);
   border-radius: 15px;
   margin: 20px;
-  width: 600px;
+  width: 300px;
 }
 
 .name-input {
   display: flex;
   gap: 4px;
   padding-left: 10px;
-}
-
-label {
-  
 }
 
 .first-name {
@@ -56,4 +52,21 @@ button {
   padding: 8px;
   margin-bottom: 30px;
 }
+
+#success-message {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+#success-message.show {
+  display: block;
+  opacity: 1;
+}
+
+
+
   
